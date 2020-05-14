@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>diagnosticos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-split-pane contentId="paneContent">
+  <ion-menu side="start" contentId="paneContent" menuId="lenguajesMenu">
+    <ion-content fullscreen="true"><br><br><br>
+      <ion-list class="ion-padding-top-5">
+        <ion-item routerLink="/tabs/lenguajes/diagnosticos/denominacion">Denominación</ion-item>
+        <ion-item routerLink="/tabs/lenguajes/diagnosticos/dimension">Dimensión</ion-item>
+        <ion-item routerLink="/tabs/lenguajes/diagnosticos/categoria">Categoría</ion-item>
+        <ion-item routerLink="/tabs/lenguajes/diagnosticos/componente">Componente</ion-item>
+        <!--
+        Menú para hacer pruebas con el ionNav + NavController de ionic
+
+        <ion-item (click)="openPage('/tabs/lenguajes/diagnosticos/denominacion')">Denominación</ion-item>
+        <ion-item (click)="openPage('/tabs/lenguajes/diagnosticos/dimension')">Dimensión</ion-item>
+        <ion-item (click)="openPage('/tabs/lenguajes/diagnosticos/categoria')">Categoria</ion-item>
+        <ion-item (click)="openPage('/tabs/lenguajes/diagnosticos/componente')">Componente</ion-item>-->
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="paneContent"></ion-router-outlet>
+  <!--
+  Para hacer pruebas con ion-nav en vez de router-outlet
+  <ion-nav id="paneContent" [root]="rootPage"></ion-nav>-->
+</ion-split-pane>
